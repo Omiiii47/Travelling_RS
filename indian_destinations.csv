@@ -1,0 +1,31 @@
+Destination_Name,State,Type,Best_Time_to_Visit,Preferences,Family_Friendly,Solo_Travel,Couple_Friendly,Senior_Friendly,Budget_Traveler,Luxury_Traveler,Popularity_Score,Budget_Min,Budget_Max
+Goa,Goa,Beach,October-March,"Beach, Nightlife, Relaxation, Culture, Food",5,4,5,4,3,5,9,2000,20000
+Jaipur,Rajasthan,Heritage,October-March,"Culture, History, Architecture, Shopping, Food",5,4,5,4,4,5,9,1500,15000
+Manali,Himachal Pradesh,Hill Station,December-February,"Nature, Adventure, Mountains, Relaxation, Romantic",4,4,5,3,4,5,8,1200,12000
+Varanasi,Uttar Pradesh,Religious,October-March,"Religious, Culture, History, Spiritual, Architecture",3,5,4,3,5,4,8,800,8000
+Agra,Uttar Pradesh,Heritage,October-March,"History, Architecture, Culture, Romantic, Photography",5,4,5,4,3,5,10,1500,15000
+Rishikesh,Uttarakhand,Adventure,September-June,"Adventure, Spiritual, Nature, Yoga, Relaxation",3,5,4,2,5,4,7,800,10000
+Darjeeling,West Bengal,Hill Station,March-June,"Nature, Mountains, Tea, Scenic, Relaxation",4,5,5,3,4,5,7,1200,10000
+Amritsar,Punjab,Religious,October-March,"Religious, Culture, Food, History, Architecture",5,4,4,4,5,4,8,1000,10000
+Kodaikanal,Tamil Nadu,Hill Station,September-May,"Nature, Mountains, Relaxation, Scenic, Romantic",5,3,5,4,4,5,6,1200,12000
+Mumbai,Maharashtra,Metro,October-March,"Urban, Culture, Food, Shopping, Nightlife",4,5,4,3,3,5,9,2000,25000
+Udaipur,Rajasthan,Heritage,September-March,"Culture, Romantic, Architecture, Lakes, History",5,4,5,4,3,5,8,1800,20000
+Leh,Ladakh,Adventure,April-June,"Adventure, Mountains, Nature, Photography, Culture",3,5,5,2,3,5,8,2000,15000
+Andaman Islands,Andaman & Nicobar,Beach,November-April,"Beach, Nature, Water Sports, Relaxation, Photography",4,3,5,3,3,5,7,2500,18000
+Munnar,Kerala,Hill Station,September-March,"Nature, Tea, Mountains, Scenic, Relaxation",5,4,5,4,4,5,7,1500,12000
+Delhi,Delhi,Metro,October-March,"History, Culture, Food, Shopping, Urban",4,5,4,3,4,5,9,1800,20000
+Hampi,Karnataka,Heritage,October-March,"History, Architecture, Culture, Photography, Nature",4,5,4,3,5,3,6,800,5000
+Shimla,Himachal Pradesh,Hill Station,March-June,"Mountains, Colonial, Nature, Relaxation, Romantic",5,4,5,3,3,5,8,1500,15000
+Ooty,Tamil Nadu,Hill Station,October-June,"Nature, Mountains, Scenic, Relaxation, Colonial",5,4,5,4,4,5,7,1200,12000
+Ranthambore,Rajasthan,Wildlife,October-June,"Wildlife, Nature, Photography, Safari, Adventure",4,3,4,3,3,5,7,2500,20000
+Kolkata,West Bengal,Metro,October-March,"Culture, Food, History, Architecture, Literature",4,5,4,4,5,5,8,1500,18000
+Mysore,Karnataka,Heritage,September-March,"History, Architecture, Culture, Food, Art",5,4,5,4,4,5,7,1200,12000
+Pondicherry,Puducherry,Beach,October-March,"Beach, Colonial, Culture, Food, Relaxation",5,5,5,4,4,5,6,1500,15000
+Coorg,Karnataka,Hill Station,October-May,"Nature, Coffee, Relaxation, Mountains, Scenic",4,5,5,3,4,5,6,1500,15000
+Alleppey,Kerala,Backwaters,September-March,"Backwaters, Nature, Relaxation, Scenic, Culture",5,4,5,5,4,5,8,1800,20000
+Nainital,Uttarakhand,Hill Station,March-June,"Lakes, Mountains, Nature, Relaxation, Boating",5,4,5,4,4,5,7,1200,12000
+Kaziranga,Assam,Wildlife,November-April,"Wildlife, Nature, Safari, Photography, Adventure",3,4,3,2,4,4,6,2000,12000
+Khajuraho,Madhya Pradesh,Heritage,September-March,"Architecture, History, Art, Culture, Photography",4,4,5,3,4,4,6,1000,8000
+Pushkar,Rajasthan,Religious,November-March,"Religious, Culture, Desert, Spiritual, Photography",4,5,5,3,5,4,7,800,8000
+Gokarna,Karnataka,Beach,October-March,"Beach, Relaxation, Spiritual, Nature, Offbeat",3,5,5,3,5,3,6,1000,8000
+Mahabalipuram,Tamil Nadu,Heritage,October-March,"Beach, History, Architecture, Culture, Relaxation",5,4,5,4,4,5,7,1200,10000
