@@ -16,7 +16,7 @@ def main():
     # Initialize the recommender
     try:
         recommender = IndianTravelRecommender('indian_destinations.csv')
-        st.success("🎉 Recommendation system initialized successfully!")
+        
     except Exception as e:
         st.error(f"Error initializing the recommender: {e}")
         return
@@ -140,7 +140,7 @@ def main():
                     else:
                         st.warning("No recommendations found that match your criteria. Try adjusting your preferences.")
         else:
-            st.info("👈 Set your preferences and click 'Generate Recommendations' to get started!")
+            
             
             # Display some example destinations as cards
             st.subheader("Popular Indian Destinations")
@@ -274,8 +274,9 @@ def main():
         - Popularity scores
         
         ### Credits
-        
-        Created as a demonstration of hybrid recommendation systems combining multiple filtering techniques.
+        OM          
+        MINAL            
+        NEHA
         """)
 
 if __name__ == "__main__":
