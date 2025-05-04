@@ -232,21 +232,22 @@ def main():
                         st.markdown(f"**Budget:** ₹{dest['Budget_Min']} - ₹{dest['Budget_Max']}")
                         st.markdown(f"**Popularity:** {dest['Popularity_Score']}/10")
                         
-                        # Add expand button
-                        if st.button(f"Details", key=f"dest_{i+j}"):
-                            st.session_state.selected_destination = dest['Destination_Name']
-                            
-        # Display details if a destination is selected
-        if 'selected_destination' in st.session_state:
-            dest_name = st.session_state.selected_destination
-            st.subheader(f"Details about {dest_name}")
-            explanation = recommender.explain_recommendation(dest_name)
-            st.text(explanation)
-            
-            # Add clear button
-            if st.button("Close Details"):
-                del st.session_state.selected_destination
-                
+                        # Create a unique key for each details container
+                        details_key = f"details_{dest['Destination_Name']}"
+                        
+                        # Create a unique key for each button
+                        if st.button(f"Show Details", key=f"btn_{i}_{j}"):
+                            st.session_state[details_key] = True
+                        
+                        # Show details if the state is True
+                        if details_key in st.session_state and st.session_state[details_key]:
+                            with st.expander(f"Details for {dest['Destination_Name']}", expanded=True):
+                                explanation = recommender.explain_recommendation(dest['Destination_Name'])
+                                st.write(explanation)
+                                if st.button("Close", key=f"close_{i}_{j}"):
+                                    st.session_state[details_key] = False
+                                    st.rerun()  # Updated from experimental_rerun() to rerun()
+    
     with tab3:
         st.subheader("About this Recommender")
         st.markdown("""
