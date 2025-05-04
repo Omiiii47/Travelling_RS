@@ -8,7 +8,7 @@ class IndianTravelRecommender:
     Hybrid travel recommendation system for Indian destinations
     Combines content-based, popularity-based, and demographic filtering
     """
-    def __init__(self, data_path='indian_destinations.csv'):
+    def __init__(self, data_path='expanded_indian_destinations.csv'):
         """Initialize with the dataset"""
         self.df = pd.read_csv(data_path)
         self.prepare_data()

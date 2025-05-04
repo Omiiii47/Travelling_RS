@@ -15,7 +15,7 @@ def main():
     
     # Initialize the recommender
     try:
-        recommender = IndianTravelRecommender('indian_destinations.csv')
+        recommender = IndianTravelRecommender('expanded_indian_destinations.csv')
         
     except Exception as e:
         st.error(f"Error initializing the recommender: {e}")
@@ -171,7 +171,7 @@ def main():
         st.subheader("Explore All Destinations")
         
         # Get all destinations data
-        all_destinations = pd.read_csv('indian_destinations.csv')
+        all_destinations = pd.read_csv('expanded_indian_destinations.csv')
         
         # Filters
         col1, col2, col3 = st.columns(3)
