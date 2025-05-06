@@ -7,7 +7,7 @@ def main():
     """Main function to run the Streamlit app"""
     st.set_page_config(page_title="Indian Travel Recommender", layout="wide")
     
-    st.title("Indian Travel Destination Recommender")
+    st.title("Smart Destiny")
     st.markdown("""
     Find your perfect Indian travel destination based on your preferences and needs.
     This hybrid recommendation system combines content-based, demographic, and popularity-based filtering.
