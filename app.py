@@ -264,6 +264,9 @@ def main():
         4. **Seasonal filtering**: Considers the best time to visit each destination based on your travel month
         5. **Popularity-based filtering**: Incorporates destination popularity as a factor in recommendations
         
+        If a family has more than three children, the system adjusts the scores of various destinations to better match family preferences:
+        Family-friendly destinations like Beaches, Theme Parks, and Wildlife parks are given a 30% boost in their score. This makes them more likely to be recommended because they are generally more suitable and enjoyable for larger families with kids.
+                    
         ### Dataset
         
         The system uses a curated dataset of 30 popular Indian destinations with information on:

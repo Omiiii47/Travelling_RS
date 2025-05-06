@@ -231,14 +231,43 @@ class IndianTravelRecommender:
             0.10 * self.df['Season_Match']
         )
         
-        # Return top results
-        result = self.df.sort_values('Final_Score', ascending=False).head(top_n)
+        # Add group size adjustment
+        total_travelers = num_adults + num_children
         
-        # Prepare results
-        final_results = result[['Destination_Name', 'State', 'Type', 'Best_Time_to_Visit', 
-                             'Preferences', 'Popularity_Score', 'Budget_Min', 'Budget_Max', 'Final_Score']]
+        # Adjust scores based on group size
+        # if total_travelers > 6:
+        #     # Penalize destinations not suitable for large groups
+        #     self.df['Final_Score'] = self.df.apply(
+        #         lambda x: x['Final_Score'] * 0.7 if x['Type'] in ['Wildlife', 'Adventure'] else x['Final_Score'],
+        #         axis=1
+        #     )
         
-        return final_results
+        if num_children > 3:
+            # Boost family-friendly destinations
+            self.df['Final_Score'] = self.df.apply(
+                lambda x: x['Final_Score'] * 1.3 if x['Type'] in ['Beach', 'Theme Park', 'Wildlife'] else x['Final_Score'],
+                axis=1
+            )
+            # Penalize adventure destinations with young children
+            self.df['Final_Score'] = self.df.apply(
+                lambda x: x['Final_Score'] * 0.6 if x['Type'] in ['Adventure', 'Trekking' , 'Mountains'] and num_children < 12 else x['Final_Score'],
+                axis=1
+            )
+        
+        # Adjust budget per total travelers
+        per_person_min = min_budget * (num_adults + (num_children * 0.5))  # Children counted as 0.5 for budget
+        per_person_max = max_budget * (num_adults + (num_children * 0.5))
+        
+        # Filter based on adjusted budget
+        recommendations = self.df[
+            (self.df['Budget_Min'] <= per_person_max) & 
+            (self.df['Budget_Max'] >= per_person_min)
+        ]
+        
+        # Sort by final score and return top_n recommendations
+        recommendations = recommendations.sort_values('Final_Score', ascending=False).head(top_n)
+        
+        return recommendations
     
     def explain_recommendation(self, destination_name):
         """
