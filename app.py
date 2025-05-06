@@ -5,7 +5,7 @@ from recommendation_system import IndianTravelRecommender
 
 def main():
     """Main function to run the Streamlit app"""
-    st.set_page_config(page_title="Indian Travel Recommender", layout="wide")
+    st.set_page_config(page_title="Smart Destiny", layout="wide")
     
     st.title("Smart Destiny")
     st.markdown("""
