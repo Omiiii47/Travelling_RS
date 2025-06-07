@@ -111,13 +111,12 @@ The system uses a curated dataset (`expanded_indian_destinations.csv`) containin
 ![Destination Details](screenshots/destination_details.jpg)
 
 
-
 ## 🚧 Future Enhancements
 
-<input disabled="" type="checkbox"> User accounts and saved preferences
-<input disabled="" type="checkbox"> Integration with accommodation booking APIs
-<input disabled="" type="checkbox"> More destinations and detailed information
-<input disabled="" type="checkbox"> Itinerary generation
-<input disabled="" type="checkbox"> User reviews and ratings
+- [ ] User accounts and saved preferences
+- [ ] Integration with accommodation booking APIs
+- [ ] More destinations and detailed information
+- [ ] Itinerary generation
+- [ ] User reviews and ratings
 
 ---
